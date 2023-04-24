@@ -1,0 +1,51 @@
+
+@media screen and (max-width:991px){
+  .imo img{
+    height: 300px;
+  }
+  .navbar-brand{
+    width: 25%;
+  }
+  .carouse .carousel-item{
+    height: 300px;
+  }
+}
+@media screen and (max-width:766px) {
+  .carouse .carousel-item{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .welcom h1{
+    font-size: 40px;
+  }
+  .welcom p{
+    font-size: 35px;
+  }
+  .btny1{
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width:575px){
+    .imo img{
+    height:auto;
+  }
+  .carouse .carousel-item{
+    height: 300px;
+  }
+  .maloyo{
+    display: none;
+  }
+  .etoile2{
+    flex-direction: column;
+  }
+  .price1, .price2, .price3{
+    flex-direction: column;
+  }
+}
+
+
+/*============= carous============= */
+

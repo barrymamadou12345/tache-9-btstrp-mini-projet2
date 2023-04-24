@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./deco/css/style-mini-prjet-2.css">
+    <link rel="stylesheet" href="./deco/css/style-mini-prjet-2-resp.css">
+    <script src="https://kit.fontawesome.com/7019415cd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title></title>
+    <!-- ++++++++++ AOS ANIMATION +++++++++ -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ++++++++++ AOS ANIMATION +++++++++ -->
+
+  </head>
+  <body data-bs-spy="scroll">
+
+    <!--==========Navbar Section==========-->
+
+    <section>
+        <header id="home" class="header-wrapper">
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid ">
+                    <a class="navbar-brand ms-md-4 ms-sm-0 ms-0" href="#">
+                        <img src="./deco/images/logo3.png" class="img-fluid" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="bouton1 d-flex text-white">
+                            <p>MENU</p>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav menu-navbar-nav">
+
+                            <li class="nav-item mok" data-aos="flip-left" data-aos-duration="3000">
+                                <a class="nav-link fs-6 px-3 fw-bold" href="./index.html">ACCUEIL</a>
+                            </li>
+                            <li class="nav-item mok">
+                                <a class="nav-link text-decoration-none fs-6 px-3 fw-bold" href="./liste-produits/liste-produits.html">LISTE DE PRODUITS</a>
+                            </li>
+                            <li class="nav-item mok">
+                                <a class="nav-link text-decoration-none fs-6 px-3 fw-bold" href="./contact/contact.html">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <form class="d-flex modo ms-1 px-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" id="search" aria-label="Search">
+                                    <label for="search"><span class="moty"><i class="fa-solid fa-magnifying-glass"></i></span></label>
+                                </form>
+                            </li>
+                            <li class="nav-item mok"data-bs-toggle="modal" data-bs-target="#exampleModal30">
+                                <a class="nav-link px-3" href="#team">
+                                    <i class="fa-solid fa-cart-plus fa-2x"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="nav-item mok3" data-aos="flip-left" data-aos-duration="3000">
+                                <a class="nav-link fs-5 ms-0 ms-sm-0 ms-md-0 ms-lg-3 px-3 fw-bold" href="./connection/connection.html">Connection / Inscription</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="navo fixed-top  d-flex justify-content-end align-items-center" data-aos="zoom-out-up" data-aos-duration="3000">
+                <div class="nav-item dropdown px-2 pt-2">
+                    <a class=" dropdown-toggle fs-6 nono fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Navigation
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#prod1">Types de Produits </a></li>
+                      <li><a class="dropdown-item" href="#prod2">Les Produits les Plus Achétés</a></li>
+                      <li><a class="dropdown-item" href="#prod3">Témoignages Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="modal fade" id="exampleModal30" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content pb-5">
+                    <div class=" w-100 d-flex justify-content-end" data-bs-dismiss="modal" aria-label="Close">
+                        <span><img src="./deco/images/xmark.jpg" class="img-fluid" alt="xmark"></span>
+                    </div>
+
+                    <div class="nomop d-flex justify-content-center">
+                        <p class=" payo">
+                            PAIEMENT
+                        </p>
+                    </div>
+
+                    <div class="ecro mt-4">
+                        <p class="ms-5">Carte Enresistrée</p>
+                    </div>
+
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="imapay">
+                            <img src="./deco/images/master.jpg" alt="img">
+                        </div>
+
+                        <div class="ipko mt-4" >
+                            <div class="mb-4" data-aos="flip-right" data-aos-duration="2000">
+                                <label for="porto" class="ps-1 text-italic fw-bold opacity-75">Numéro de la Carte *</label>
+                                <input type="text" class=" miby mt-3" id=".porto"  placeholder="Numero *" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="imapay">
+                            <img src="./deco/images/visa.jpg" alt="img">
+                        </div>
+
+                        <div class="ipko mt-4" >
+                            <div class="mb-4" data-aos="flip-right" data-aos-duration="2000">
+                                <label for="portor" class="ps-1 text-italic fw-bold opacity-75"> Numéro de la Carte *</label>
+                                <input type="text" class=" miby mt-3" id="portor"  placeholder="Numero *" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ecro ms-3 ms-lg-5 mt-4">
+                        <p class="ps-3">Ajouter une Carte</p>
+                    </div>
+
+                    <div class="ipko2 ms-3 ms-lg-5 ps-3 mt-3">
+                        <div class="mb-4" data-aos="flip-right" data-aos-duration="2000">
+                            <label for="porto" class="ps-1 text-italic fw-bold opacity-75">Nom du Titulaire de la carte*</label>
+                            <input type="text" class=" miby3 mt-3" id="porto"  placeholder="Nom *" required>
+                        </div>
+                    </div>
+                    <div class="ipko2 ms-3 ms-lg-5 ps-3">
+                        <div class="mb-4" data-aos="flip-right" data-aos-duration="2000">
+                            <label for="port" class="ps-1 text-italic fw-bold opacity-75">Numéro de la Carte*</label>
+                            <input type="text" class=" miby3 mt-3" id="port"  placeholder="Numero *" required>
+                        </div>
+                    </div>
+
+                    <div class="morb d-flex align-items-center">
+                        <div class="posti">
+                            <p class="ps-1 text-italic fw-bold opacity-75">Date D'expiration *</p>     
+                            <input type="date" class=" miby14"  placeholder="jj/mm/aaa *" required>
+                        </div>
+
+                        <div class="btnys mt-5" data-aos="flip-left" data-aos-duration="3000">
+                            <button type="submit" class="btny14 fw-bold text-white">
+                                VALIDER
+                            </button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========section numero 1 ==========-->
+
+    <section>
+        <div class="container-fluid maloy mb-5 pb-3 d-flex justify-content-center align-items-center">
+            <div class="welcom pt-5 my-5">
+                <p  class=" text-center fst-italic fw-bold  d-flex justify-content-center w-100" data-aos="flip-up" data-aos-duration="2000">
+                    Bienvenue Sur NOVELTY SHOP!
+                </p>
+                <h1 class="text-white text-center fw-bold d-flex justify-content-center w-100" data-aos="flip-left" data-aos-duration="2000">
+                    NOUS SOMMES RAVIE DE VOTRE VISITE
+                </h1>
+                <div class="d-flex justify-content-center w-100 ">
+                    <div class="btny">
+                        <button type="submit" class="btny1 fs-4 fw-bold" data-aos="flip-down" data-aos-duration="3000">
+                            <a href="./liste-produits/liste-produits.html" class="text-white text-decoration-none">EN SAVOIR PLUS</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="maloyo" data-aos="flip-right" data-aos-duration="3000">
+
+            </div>
+        </div>
+    </section>
+
+    <!--==========section numero 2 ==========-->
+
+    <section id="prod1">
+        <div class="number1"  data-aos="fade-up" data-aos-duration="2000">
+            <p class="pixy d-flex justify-content-center fw-bold fs-1 w-100">
+                TYPES DE PRODUITS
+            </p>
+            <p class="pixy1 d-flex justify-content-center w-100 fst-italic text-center fs-5 fw-bold opacity-75">
+                Le type de produits que vous propose Novelty Shop.
+            </p>
+        </div>
+        <div class="container my-5 py-4">
+            <div class="row">
+                <div class="col-11 col-sm-6 col-md-4 d-flex justify-content-center mb-4 mb-sm-4 mb-md-4 m-auto m-sm-0 m-md-0">
+                    <div class="col-12 moto">
+                        <div class="imo mb-4"   data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="./deco/images/cost1.jpg" class="img-fluid" alt="une image">
+
+                            <div class="icono">
+                                <div class="rol">
+                                    <div class="modolo">
+                                        <!-- Button trigger modal -->
+                                        <div data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">EN SAVOIR PLUS</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class=" w-100 d-flex justify-content-end" data-bs-dismiss="modal" aria-label="Close">
+                                        <span><img src="./deco/images/xmark.jpg" class="img-fluid" alt="xmark"></span>
+                                    </div>
+                                    <div class=" d-flex justify-content-center">
+                                        <p class="fs-4 fw-bold">DETAILS DU PRODUIT</p>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="container">
+                                            <div class="row slimo py-3">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                                                    <div class=" imo2 col-12">
+                                                        <img src="./deco/images/cost1.jpg" class="img-fluid" alt="une image">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 ">
+                                                    <div class="col-12">
+                                                        <div class="lompi2 mb-3">
+                                                            <h5 class="">
+                                                                Costume pour Homme 3 pièces Veste et pantalon Gile
+                                                                Jacquard Slim Blazer de soirée de mariage d'affaires
+                                                            </h5>
+                                                            <div class="price1 d-flex m-auto pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">PRIX UNITAIRE :</p>
+                                                                <p class=" p2 fw-bold"> 80.000 Franc CFA</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="lompi3">
+                                                            <div class="price1 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-md-5 pe-sm-3  pe-0">TAILLE :</p>
+                                                                <ul class="taille d-flex ps-md-0 ps-0">
+                                                                    <li class="">XS</li>
+                                                                    <li class="">S</li>
+                                                                    <li class=" text-white li3">M</li>
+                                                                    <li class="">L</li>
+                                                                    <li class="">XL</li>
+                                                                    <li class="">XXL</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="etoile2 d-flex">
+                                                                <ul class="d-flex ps-md-0 ps-sm-3 ps-0">
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                                                                </ul>
+                                                                <p class="px-md-5 px-sm-3 px-0"><span class="fw-bold">17</span> Commentaires</p>
+                                                                <p class="ps-md-5 ps-0"><span class="fw-bold">26</span> Pièces Vendues</p>
+                                                            </div>
+    
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3">
+                                                                <a href="./liste-produits/liste-produits.html" class=" text-decoration-none">PLUS DE PRODUITS</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="lompi4">
+                                                            <div class="price1 d-flex pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">TYPE DE VERSION :</p>
+                                                                <p class="pt-1"> Type Mince</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">COMMENDE MINIMAL :</p>
+                                                                <p class="pt-1"> Une Pièce</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">RETOUR DU PRODUIT :</p>
+                                                                <p class="pt-1"> Valable Dans <span class="fw-bold">24 heures</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-3 ">
+                                                    <p class="fs-4 fw-bold text-center">Details De L'achat</p>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">EXPEDITION :</p>
+                                                        <p class="pt-1 "> Veillez Contacter Le livreur Pour Plus D'information sur L'expédition.</p>
+                                                    </div>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">LIVRAISON :</p>
+                                                        <p class="pt-1">Reduction de <span class="fw-bold">05%</span> Des Fraits de Lvraison à Partir d'un Achat de 5 Pièces </p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-end me-0 me-sm-0 me-md-5 pe-0 pe-sm-0 pe-md-5 mt-4">
+                                                        <div class="" data-bs-dismiss="modal">
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3 me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6">
+                                                                <a href="#services" class="text-decoration-none">AJOUTER AU PANIER</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <button type="button" class="btny4 fs-6 fw-bold text-white" data-bs-dismiss="modal">
+                                                            <i class="fa fa-xmark me-2"></i>FERMER
+                                                        </button> 
+                                                    </div>
+                                               </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lompi m-auto">
+                            <h5 class="text-center">Costume pour Homme 3 pièces Veste et pantalon Gile</h5>
+                        </div>
+                        <div class="price m-auto" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <p class="fs-4 fw-bold texte-center"> 80.000 Franc CFA</p>
+                        </div>
+                        <div class="etoile">
+                            <ul class="d-flex">
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center w-100 mt-3">
+                            <div class="btny mb-4">
+                                <button type="submit" class="btny2 fs-6 fw-bold"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight6">
+                                    <a href="#services" class="text-white text-decoration-none">
+                                        AJOUTER AU PANIER
+                                    </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight6" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <div class="titohead m-auto">
+                                            <p class="fw-bold">PANIER</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="imocanvas">
+                                            <img src="./deco/images/cost1.jpg" class="img-fluid" alt="une image">
+                                        </div>
+                                        <div class="texcanvas pt-3">
+                                            <div class="lompi m-auto">
+                                                <h5 class="text-center">Costume pour Homme 3 pièces Veste et pantalon Gile</h5>
+                                            </div>
+                                            <div class="price m-auto">
+                                                <p class="fs-4 fw-bold texte-center"> 80.000 Franc CFA</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end pt-4">
+                                            <div class=""data-bs-toggle="modal" data-bs-target="#exampleModal30">
+                                                <button type="submit" class="btny2 fs-6 fw-bold" data-bs-dismiss="offcanvas">
+                                                    <a href="#services" class="text-white text-decoration-none">
+                                                        COMMENDER
+                                                    </a>
+                                                </button>
+                                            </div>
+
+                                            <button type="button" class="btny4 fs-6 fw-bold text-white mx-3 bg-danger" data-bs-dismiss="offcanvas">
+                                                <i class="fa fa-xmark me-2"></i>FERMER
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-sm-6 col-md-4 d-flex justify-content-center mb-4 mb-sm-4 mb-md-4 m-auto m-sm-0 m-md-0">
+                    <div class="col-12 moto">
+                        <div class="imo mb-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <a href=""><img src="./deco/images/cost2.jpg" class="img-fluid" alt="une image"></a>
+
+                            <div class="icono">
+                                <div class="rol">
+                                    <div class="modolo">
+                                        <!-- Button trigger modal -->
+                                        <div data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">EN SAVOIR PLUS</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class=" w-100 d-flex justify-content-end" data-bs-dismiss="modal" aria-label="Close">
+                                        <span><img src="./deco/images/xmark.jpg" class="img-fluid" alt="xmark"></span>
+                                    </div>
+                                    <div class=" d-flex justify-content-center">
+                                        <p class="fs-4 fw-bold">DETAILS DU PRODUIT</p>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="container">
+                                            <div class="row slimo py-3">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                                                    <div class=" imo2 col-12">
+                                                        <img src="./deco/images/cost2.jpg" class="img-fluid" alt="une image">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 ">
+                                                    <div class="col-12">
+                                                        <div class="lompi2 mb-3">
+                                                            <h5 class="">
+                                                                Costume 3 pièces pour Homme Veste et pantalon Gile,
+                                                                Style Décontracté, Avec Fente Bleue.
+                                                            </h5>
+                                                            <div class="price1 d-flex m-auto pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">PRIX UNITAIRE :</p>
+                                                                <p class=" p2 fw-bold"> 65.400 Franc CFA</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="lompi3">
+                                                            <div class="price1 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-md-5 pe-sm-3  pe-0">TAILLE :</p>
+                                                                <ul class="taille d-flex ps-md-0 ps-0">
+                                                                    <li class="">XS</li>
+                                                                    <li class="">S</li>
+                                                                    <li class="">M</li>
+                                                                    <li class="text-white li3">L</li>
+                                                                    <li class="">XL</li>
+                                                                    <li class="">XXL</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="etoile2 d-flex">
+                                                                <ul class="d-flex ps-md-0 ps-sm-3 ps-0">
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                                                                </ul>
+                                                                <p class="px-md-5 px-sm-3 px-0"><span class="fw-bold">11</span> Commentaires</p>
+                                                                <p class="ps-md-5 ps-0"><span class="fw-bold">16</span> Pièces Vendues</p>
+                                                            </div>
+    
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3">
+                                                                <a href="./liste-produits/liste-produits.html" class=" text-decoration-none">PLUS DE PRODUITS</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="lompi4">
+                                                            <div class="price1 d-flex pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">TYPE DE VERSION :</p>
+                                                                <p class="pt-1"> Type Mince</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">COMMENDE MINIMAL :</p>
+                                                                <p class="pt-1"> Une Pièce</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">RETOUR DU PRODUIT :</p>
+                                                                <p class="pt-1"> Valable Dans <span class="fw-bold">24 heures</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-3 ">
+                                                    <p class="fs-4 fw-bold text-center">Details De L'achat</p>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">EXPEDITION :</p>
+                                                        <p class="pt-1 "> Veillez Contacter Le livreur Pour Plus D'information sur L'expédition.</p>
+                                                    </div>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">LIVRAISON :</p>
+                                                        <p class="pt-1">Reduction de <span class="fw-bold">05%</span> Des Fraits de Lvraison à Partir d'un Achat de 5 Pièces </p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-end me-0 me-sm-0 me-md-5 pe-0 pe-sm-0 pe-md-5 mt-4">
+                                                        <div class="" data-bs-dismiss="modal">
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3 me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5">
+                                                                <a href="#services" class="text-decoration-none">AJOUTER AU PANIER</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <button type="button" class="btny4 fs-6 fw-bold text-white" data-bs-dismiss="modal">
+                                                            <i class="fa fa-xmark me-2"></i>FERMER
+                                                        </button> 
+                                                    </div>
+                                               </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lompi m-auto">
+                            <h5 class="text-center">Costume 3 pièces pour Homme Veste et pantalon</h4>
+                        </div>
+                        <div class="price m-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <p class="fs-4 fw-bold texte-center"> 65.400 Franc CFA</p>
+                        </div>
+                        <div class="etoile">
+                            <ul class="d-flex">
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center w-100 mt-3">
+                            <div class="btny mb-4">
+                                <button type="submit" class="btny2 fs-6 fw-bold"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5">
+                                    <a href="#services" class="text-white text-decoration-none">
+                                        AJOUTER AU PANIER
+                                    </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <div class="titohead m-auto">
+                                            <p class="fw-bold">PANIER</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="imocanvas">
+                                            <img src="./deco/images/cost2.jpg" class="img-fluid" alt="une image">
+                                        </div>
+                                        <div class="texcanvas pt-3">
+                                            <div class="lompi m-auto">
+                                                <h5 class="text-center">Costume 3 pièces pour Homme Veste et pantalon</h4>
+                                            </div>
+                                            <div class="price m-auto">
+                                                <p class="fs-4 fw-bold texte-center"> 65.400 Franc CFA</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end pt-4">
+                                            <div class=""data-bs-toggle="modal" data-bs-target="#exampleModal30">
+                                                <button type="submit" class="btny2 fs-6 fw-bold" data-bs-dismiss="offcanvas">
+                                                    <a href="#services" class="text-white text-decoration-none">
+                                                        COMMENDER
+                                                    </a>
+                                                </button>
+                                            </div>
+
+                                            <button type="button" class="btny4 fs-6 fw-bold text-white mx-3 bg-danger" data-bs-dismiss="offcanvas">
+                                                <i class="fa fa-xmark me-2"></i>FERMER
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-sm-6 col-md-4 d-flex justify-content-center mb-4 mb-sm-4 mb-md-4 m-auto m-sm-0 m-md-0">
+                    <div class="col-12 moto">
+                        <div class="imo mb-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <a href=""><img src="./deco/images/cost3.jpg" class="img-fluid" alt="une image"></a>
+
+                            <div class="icono">
+                                <div class="rol">
+                                    <div class="modolo">
+                                        <!-- Button trigger modal -->
+                                        <div data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">EN SAVOIR PLUS</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class=" w-100 d-flex justify-content-end" data-bs-dismiss="modal" aria-label="Close">
+                                        <span><img src="./deco/images/xmark.jpg" class="img-fluid" alt="xmark"></span>
+                                    </div>
+                                    <div class=" d-flex justify-content-center">
+                                        <p class="fs-4 fw-bold">DETAILS DU PRODUIT</p>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="container">
+                                            <div class="row slimo py-3">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                                                    <div class=" imo2 col-12">
+                                                        <img src="./deco/images/cost3.jpg" class="img-fluid" alt="une image">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 ">
+                                                    <div class="col-12">
+                                                        <div class="lompi2 mb-3">
+                                                            <h5 class="">
+                                                                Costume pour Homme Mariage 3 pièces, 
+                                                                Men Suit Slim Fit Coctume de Mariage 
+                                                            </h5>
+                                                            <div class="price1 d-flex m-auto pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">PRIX UNITAIRE :</p>
+                                                                <p class=" p2 fw-bold">73.670 Franc CFA</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="lompi3">
+                                                            <div class="price1 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-md-5 pe-sm-3  pe-0">TAILLE :</p>
+                                                                <ul class="taille d-flex ps-md-0 ps-0">
+                                                                    <li class="">XS</li>
+                                                                    <li class="text-white li3">S</li>
+                                                                    <li class="">M</li>
+                                                                    <li class="">L</li>
+                                                                    <li class="">XL</li>
+                                                                    <li class="">XXL</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="etoile2 d-flex">
+                                                                <ul class="d-flex ps-md-0 ps-sm-3 ps-0">
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                </ul>
+                                                                <p class="px-md-5 px-sm-3 px-0"><span class="fw-bold">24</span> Commentaires</p>
+                                                                <p class="ps-md-5 ps-0"><span class="fw-bold">36</span> Pièces Vendues</p>
+                                                            </div>
+    
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3">
+                                                                <a href="./liste-produits/liste-produits.html" class=" text-decoration-none">PLUS DE PRODUITS</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="lompi4">
+                                                            <div class="price1 d-flex pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">TYPE DE VERSION :</p>
+                                                                <p class="pt-1"> Type Mince</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">COMMENDE MINIMAL :</p>
+                                                                <p class="pt-1"> Une Pièce</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">RETOUR DU PRODUIT :</p>
+                                                                <p class="pt-1"> Valable Dans <span class="fw-bold">24 heures</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-3 ">
+                                                    <p class="fs-4 fw-bold text-center">Details De L'achat</p>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">EXPEDITION :</p>
+                                                        <p class="pt-1 "> Veillez Contacter Le livreur Pour Plus D'information sur L'expédition.</p>
+                                                    </div>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">LIVRAISON :</p>
+                                                        <p class="pt-1">Reduction de <span class="fw-bold">05%</span> Des Fraits de Lvraison à Partir d'un Achat de 5 Pièces </p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-end me-0 me-sm-0 me-md-5 pe-0 pe-sm-0 pe-md-5 mt-4">
+                                                        <div class="" data-bs-dismiss="modal">
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3 me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4">
+                                                                <a href="#services" class="text-decoration-none">AJOUTER AU PANIER</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <button type="button" class="btny4 fs-6 fw-bold text-white" data-bs-dismiss="modal">
+                                                            <i class="fa fa-xmark me-2"></i>FERMER
+                                                        </button> 
+                                                    </div>
+                                               </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lompi m-auto">
+                            <h5 class="text-center">Costume pour Homme Mariage 3 pièces</h4>
+                        </div>
+                        <div class="price m-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <p class="fs-4 fw-bold texte-center"> 73.670 Franc CFA</p>
+                        </div>
+                        <div class="etoile">
+                            <ul class="d-flex">
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center w-100 mt-3">
+                            <div class="btny mb-4">
+                                <button type="submit" class="btny2 fs-6 fw-bold"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight4">
+                                    <a href="#services" class="text-white text-decoration-none">
+                                        AJOUTER AU PANIER
+                                    </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <div class="titohead m-auto">
+                                            <p class="fw-bold">PANIER</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="imocanvas">
+                                            <img src="./deco/images/cost3.jpg" class="img-fluid" alt="une image">
+                                        </div>
+                                        <div class="texcanvas pt-3">
+                                            <div class="lompi m-auto">
+                                                <h5 class="text-center">Costume pour Homme Mariage 3 pièces</h4>
+                                            </div>
+                                            <div class="price m-auto">
+                                                <p class="fs-4 fw-bold texte-center"> 73.670 Franc CFA</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end pt-4">
+                                            <div class=""data-bs-toggle="modal" data-bs-target="#exampleModal30">
+                                                <button type="submit" class="btny2 fs-6 fw-bold" data-bs-dismiss="offcanvas">
+                                                    <a href="#services" class="text-white text-decoration-none">
+                                                        COMMENDER
+                                                    </a>
+                                                </button>
+                                            </div>
+
+                                            <button type="button" class="btny4 fs-6 fw-bold text-white mx-3 bg-danger" data-bs-dismiss="offcanvas">
+                                                <i class="fa fa-xmark me-2"></i>FERMER
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-sm-6 col-md-4 d-flex justify-content-center mb-4 mb-sm-4 mb-md-0 m-auto m-sm-0 m-md-0">
+                    <div class="col-12 moto">
+                        <div class="imo mb-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <a href=""><img src="./deco/images/cost4.jpg" class="img-fluid" alt="une image"></a>
+
+                            <div class="icono">
+                                <div class="rol">
+                                    <div class="modolo">
+                                        <!-- Button trigger modal -->
+                                        <div data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">EN SAVOIR PLUS</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class=" w-100 d-flex justify-content-end" data-bs-dismiss="modal" aria-label="Close">
+                                        <span><img src="./deco/images/xmark.jpg" class="img-fluid" alt="xmark"></span>
+                                    </div>
+                                    <div class=" d-flex justify-content-center">
+                                        <p class="fs-4 fw-bold">DETAILS DU PRODUIT</p>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="container">
+                                            <div class="row slimo py-3">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                                                    <div class=" imo2 col-12">
+                                                        <img src="./deco/images/cost4.jpg" class="img-fluid" alt="une image">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 ">
+                                                    <div class="col-12">
+                                                        <div class="lompi2 mb-3">
+                                                            <h5 class="">
+                                                                Chemise Homme Col mao Marque Luxe Broderie,
+                                                                Chemise Rouge pour Homme 
+                                                            </h5>
+                                                            <div class="price1 d-flex m-auto pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">PRIX UNITAIRE :</p>
+                                                                <p class=" p2 fw-bold"> 31.000 Franc CFA</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="lompi3">
+                                                            <div class="price1 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-md-5 pe-sm-3  pe-0">TAILLE :</p>
+                                                                <ul class="taille d-flex ps-md-0 ps-0">
+                                                                    <li class="">XS</li>
+                                                                    <li class="">S</li>
+                                                                    <li class=" text-white li3">M</li>
+                                                                    <li class="">L</li>
+                                                                    <li class="">XL</li>
+                                                                    <li class="">XXL</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="etoile2 d-flex">
+                                                                <ul class="d-flex ps-md-0 ps-sm-3 ps-0">
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                </ul>
+                                                                <p class="px-md-5 px-sm-3 px-0"><span class="fw-bold">7</span> Commentaires</p>
+                                                                <p class="ps-md-5 ps-0"><span class="fw-bold">13</span> Pièces Vendues</p>
+                                                            </div>
+    
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3">
+                                                                <a href="./liste-produits/liste-produits.html" class=" text-decoration-none">PLUS DE PRODUITS</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="lompi4">
+                                                            <div class="price1 d-flex pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">TYPE DE VERSION :</p>
+                                                                <p class="pt-1"> Type Mince</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">COMMENDE MINIMAL :</p>
+                                                                <p class="pt-1"> Une Pièce</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">RETOUR DU PRODUIT :</p>
+                                                                <p class="pt-1"> Valable Dans <span class="fw-bold">24 heures</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-3 ">
+                                                    <p class="fs-4 fw-bold text-center">Details De L'achat</p>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">EXPEDITION :</p>
+                                                        <p class="pt-1 "> Veillez Contacter Le livreur Pour Plus D'information sur L'expédition.</p>
+                                                    </div>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">LIVRAISON :</p>
+                                                        <p class="pt-1">Reduction de <span class="fw-bold">05%</span> Des Fraits de Lvraison à Partir d'un Achat de 5 Pièces </p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-end me-0 me-sm-0 me-md-5 pe-0 pe-sm-0 pe-md-5 mt-4">
+                                                        <div class="" data-bs-dismiss="modal">
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3 me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3">
+                                                                <a href="#services" class="text-decoration-none">AJOUTER AU PANIER</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <button type="button" class="btny4 fs-6 fw-bold text-white" data-bs-dismiss="modal">
+                                                            <i class="fa fa-xmark me-2"></i>FERMER
+                                                        </button> 
+                                                    </div>
+                                               </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lompi m-auto">
+                            <h5 class="text-center">Chemise Homme Col mao Marque Luxe Broderie</h4>
+                        </div>
+                        <div class="price m-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <p class="fs-4 fw-bold texte-center"> 31.000 Franc CFA</p>
+                        </div>
+                        <div class="etoile">
+                            <ul class="d-flex">
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center w-100 mt-3">
+                            <div class="btny mb-4">
+                                <button type="submit" class="btny2 fs-6 fw-bold"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3">
+                                    <a href="#services" class="text-white text-decoration-none">
+                                        AJOUTER AU PANIER
+                                    </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <div class="titohead m-auto">
+                                            <p class="fw-bold">PANIER</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="imocanvas">
+                                            <img src="./deco/images/cost4.jpg" class="img-fluid" alt="une image">
+                                        </div>
+                                        <div class="texcanvas pt-3">
+                                            <div class="lompi m-auto">
+                                                <h5 class="text-center">Chemise Homme Col mao Marque Luxe Broderie</h4>
+                                            </div>
+                                            <div class="price m-auto">
+                                                <p class="fs-4 fw-bold texte-center"> 31.000 Franc CFA</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end pt-4">
+                                            <div class=""data-bs-toggle="modal" data-bs-target="#exampleModal30">
+                                                <button type="submit" class="btny2 fs-6 fw-bold" data-bs-dismiss="offcanvas">
+                                                    <a href="#services" class="text-white text-decoration-none">
+                                                        COMMENDER
+                                                    </a>
+                                                </button>
+                                            </div>
+
+                                            <button type="button" class="btny4 fs-6 fw-bold text-white mx-3 bg-danger" data-bs-dismiss="offcanvas">
+                                                <i class="fa fa-xmark me-2"></i>FERMER
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-sm-6 col-md-4 d-flex justify-content-center mb-4 mb-sm-4 mb-md-0 m-auto m-sm-0 m-md-0">
+                    <div class="col-12 moto">
+                        <div class="imo mb-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <a href=""><img src="./deco/images/cost7.jpg" class="img-fluid" alt="une image"></a>
+
+                            <div class="icono">
+                                <div class="rol">
+                                    <div class="modolo">
+                                        <!-- Button trigger modal -->
+                                        <div data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">EN SAVOIR PLUS</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class=" w-100 d-flex justify-content-end" data-bs-dismiss="modal" aria-label="Close">
+                                        <span><img src="./deco/images/xmark.jpg" class="img-fluid" alt="xmark"></span>
+                                    </div>
+                                    <div class=" d-flex justify-content-center">
+                                        <p class="fs-4 fw-bold">DETAILS DU PRODUIT</p>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="container">
+                                            <div class="row slimo py-3">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                                                    <div class=" imo2 col-12">
+                                                        <img src="./deco/images/cost7.jpg" class="img-fluid" alt="une image">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 ">
+                                                    <div class="col-12">
+                                                        <div class="lompi2 mb-3">
+                                                            <h5 class="">
+                                                                JN762 - James & Nicholson - Veste Polaire Tricot pour Homme, Cybernecard.
+                                                            </h5>
+                                                            <div class="price1 d-flex m-auto pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">PRIX UNITAIRE :</p>
+                                                                <p class=" p2 fw-bold"> 46.900 Franc CFA</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="lompi3">
+                                                            <div class="price1 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-md-5 pe-sm-3  pe-0">TAILLE :</p>
+                                                                <ul class="taille d-flex ps-md-0 ps-0">
+                                                                    <li class="">XS</li>
+                                                                    <li class="">S</li>
+                                                                    <li class="">M</li>
+                                                                    <li class="">L</li>
+                                                                    <li class="text-white li3">XL</li>
+                                                                    <li class="">XXL</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="etoile2 d-flex">
+                                                                <ul class="d-flex ps-md-0 ps-sm-3 ps-0">
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                </ul>
+                                                                <p class="px-md-5 px-sm-3 px-0"><span class="fw-bold">13</span> Commentaires</p>
+                                                                <p class="ps-md-5 ps-0"><span class="fw-bold">24</span> Pièces Vendues</p>
+                                                            </div>
+    
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3">
+                                                                <a href="./liste-produits/liste-produits.html" class=" text-decoration-none">PLUS DE PRODUITS</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="lompi4">
+                                                            <div class="price1 d-flex pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">TYPE DE VERSION :</p>
+                                                                <p class="pt-1"> Type Mince</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">COMMENDE MINIMAL :</p>
+                                                                <p class="pt-1"> Une Pièce</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">RETOUR DU PRODUIT :</p>
+                                                                <p class="pt-1"> Valable Dans <span class="fw-bold">24 heures</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-3 ">
+                                                    <p class="fs-4 fw-bold text-center">Details De L'achat</p>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">EXPEDITION :</p>
+                                                        <p class="pt-1 "> Veillez Contacter Le livreur Pour Plus D'information sur L'expédition.</p>
+                                                    </div>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">LIVRAISON :</p>
+                                                        <p class="pt-1">Reduction de <span class="fw-bold">05%</span> Des Fraits de Lvraison à Partir d'un Achat de 5 Pièces </p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-end me-0 me-sm-0 me-md-5 pe-0 pe-sm-0 pe-md-5 mt-4">
+                                                        <div class="" data-bs-dismiss="modal">
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3 me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2">
+                                                                <a href="#services" class="text-decoration-none">AJOUTER AU PANIER</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <button type="button" class="btny4 fs-6 fw-bold text-white" data-bs-dismiss="modal">
+                                                            <i class="fa fa-xmark me-2"></i>FERMER
+                                                        </button> 
+                                                    </div>
+                                               </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lompi m-auto">
+                            <h5 class="text-center">Veste Polaire Tricot pour Homme Cybernecard</h4>
+                        </div>
+                        <div class="price m-auto">
+                            <p class="fs-4 fw-bold texte-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> 46.900 Franc CFA</p>
+                        </div>
+                        <div class="etoile">
+                            <ul class="d-flex">
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center w-100 mt-3">
+                            <div class="btny mb-4">
+                                <button type="submit" class="btny2 fs-6 fw-bold"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2">
+                                    <a href="#services" class="text-white text-decoration-none">
+                                        AJOUTER AU PANIER
+                                    </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <div class="titohead m-auto">
+                                            <p class="fw-bold">PANIER</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="imocanvas">
+                                            <img src="./deco/images/cost7.jpg" class="img-fluid" alt="une image">
+                                        </div>
+                                        <div class="texcanvas pt-3">
+                                            <div class="lompi m-auto">
+                                                <h5 class="text-center">Veste Polaire Tricot pour Homme Cybernecard</h4>
+                                            </div>
+                                            <div class="price m-auto">
+                                                <p class="fs-4 fw-bold texte-center"> 46.900 Franc CFA</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end pt-4">
+                                            <div class=""data-bs-toggle="modal" data-bs-target="#exampleModal30">
+                                                <button type="submit" class="btny2 fs-6 fw-bold" data-bs-dismiss="offcanvas">
+                                                    <a href="#services" class="text-white text-decoration-none">
+                                                        COMMENDER
+                                                    </a>
+                                                </button>
+                                            </div>
+
+                                            <button type="button" class="btny4 fs-6 fw-bold text-white mx-3 bg-danger" data-bs-dismiss="offcanvas">
+                                                <i class="fa fa-xmark me-2"></i>FERMER
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-sm-6 col-md-4 d-flex justify-content-center mb-4 mb-sm-4 mb-md-0 m-auto m-sm-0 m-md-0">
+                    <div class="col-12 moto">
+                        <div class="imo mb-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <a href=""><img src="./deco/images/cost9.jpg" class="img-fluid" alt="une image"></a>
+
+                            <div class="icono">
+                                <div class="rol">
+                                    <div class="modolo">
+                                        <!-- Button trigger modal -->
+                                        <div data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">EN SAVOIR PLUS</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class=" w-100 d-flex justify-content-end" data-bs-dismiss="modal" aria-label="Close">
+                                        <span><img src="./deco/images/xmark.jpg" class="img-fluid" alt="xmark"></span>
+                                    </div>
+                                    <div class=" d-flex justify-content-center">
+                                        <p class="fs-4 fw-bold">DETAILS DU PRODUIT</p>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="container">
+                                            <div class="row slimo py-3">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 mb-4 mb-lg-0">
+                                                    <div class=" imo2 col-12">
+                                                        <img src="./deco/images/cost9.jpg" class="img-fluid" alt="une image">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 ">
+                                                    <div class="col-12">
+                                                        <div class="lompi2 mb-3">
+                                                            <h5 class="">
+                                                                Manteau Pour Homme, Veste Slim, Blouson Masculin Gris Foncé.
+                                                            </h5>
+                                                            <div class="price1 d-flex m-auto pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">PRIX UNITAIRE :</p>
+                                                                <p class=" p2 fw-bold"> 35.000 Franc CFA</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="lompi3">
+                                                            <div class="price1 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-md-5 pe-sm-3  pe-0">TAILLE :</p>
+                                                                <ul class="taille d-flex ps-md-0 ps-0">
+                                                                    <li class="">XS</li>
+                                                                    <li class="">S</li>
+                                                                    <li class=" text-white li3">M</li>
+                                                                    <li class="">L</li>
+                                                                    <li class="">XL</li>
+                                                                    <li class="">XXL</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="etoile2 d-flex">
+                                                                <ul class="d-flex ps-md-0 ps-sm-3 ps-0">
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                                    <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                                                                </ul>
+                                                                <p class="px-md-5 px-sm-3 px-0"><span class="fw-bold">9</span> Commentaires</p>
+                                                                <p class="ps-md-5 ps-0"><span class="fw-bold">14</span> Pièces Vendues</p>
+                                                            </div>
+    
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3">
+                                                                <a href="./liste-produits/liste-produits.html" class=" text-decoration-none">PLUS DE PRODUITS</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="lompi4">
+                                                            <div class="price1 d-flex pt-3">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">TYPE DE VERSION :</p>
+                                                                <p class="pt-1"> Type Mince</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">COMMENDE MINIMAL :</p>
+                                                                <p class="pt-1"> Une Pièce</p>
+                                                            </div>
+                                                            <div class="price2 d-flex">
+                                                                <p class=" p1 fw-bold opacity-75 pe-5">RETOUR DU PRODUIT :</p>
+                                                                <p class="pt-1"> Valable Dans <span class="fw-bold">24 heures</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-3 ">
+                                                    <p class="fs-4 fw-bold text-center">Details De L'achat</p>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">EXPEDITION :</p>
+                                                        <p class="pt-1 "> Veillez Contacter Le livreur Pour Plus D'information sur L'expédition.</p>
+                                                    </div>
+                                                    <div class="price2 d-flex justify-content-center">
+                                                        <p class=" p1 fw-bold opacity-75 pe-3">LIVRAISON :</p>
+                                                        <p class="pt-1">Reduction de <span class="fw-bold">05%</span> Des Fraits de Lvraison à Partir d'un Achat de 5 Pièces </p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-end me-0 me-sm-0 me-md-5 pe-0 pe-sm-0 pe-md-5 mt-4">
+                                                        <div class="" data-bs-dismiss="modal">
+                                                            <button type="submit" class="btny3 fs-6 fw-bold mb-3 me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1">
+                                                                <a href="#services" class="text-decoration-none">AJOUTER AU PANIER</a>
+                                                            </button>
+                                                        </div>
+
+                                                        <button type="button" class="btny4 fs-6 fw-bold text-white" data-bs-dismiss="modal">
+                                                            <i class="fa fa-xmark me-2"></i>FERMER
+                                                        </button> 
+                                                    </div>
+                                               </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lompi m-auto">
+                            <h5 class="text-center">Manteau Pour Homme - Veste Slim, Blouson Gris Foncé</h4>
+                        </div>
+                        <div class="price m-auto">
+                            <p class="fs-4 fw-bold texte-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> 35.000 Franc CFA</p>
+                        </div>
+                        <div class="etoile">
+                            <ul class="d-flex">
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-center w-100 mt-3">
+                            <div class="btny mb-4">
+                                <button type="submit" class="btny2 fs-6 fw-bold"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1">
+                                    <a href="#services" class="text-white text-decoration-none">
+                                        AJOUTER AU PANIER
+                                    </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <div class="titohead m-auto">
+                                            <p class="fw-bold">PANIER</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="imocanvas">
+                                            <img src="./deco/images/cost9.jpg" class="img-fluid" alt="une image">
+                                        </div>
+                                        <div class="texcanvas pt-3">
+                                            <div class="lompi m-auto">
+                                                <h5 class="text-center">Manteau Pour Homme - Veste Slim, Blouson Gris Foncé</h4>
+                                            </div>
+                                            <div class="price m-auto">
+                                                <p class="fs-4 fw-bold texte-center"> 35.000 Franc CFA</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end pt-4">
+                                            <div class=""data-bs-toggle="modal" data-bs-target="#exampleModal30">
+                                                <button type="submit" class="btny2 fs-6 fw-bold" data-bs-dismiss="offcanvas">
+                                                    <a href="#services" class="text-white text-decoration-none">
+                                                        COMMENDER
+                                                    </a>
+                                                </button>
+                                            </div>
+
+                                            <button type="button" class="btny4 fs-6 fw-bold text-white mx-3 bg-danger" data-bs-dismiss="offcanvas">
+                                                <i class="fa fa-xmark me-2"></i>FERMER
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--==========section numero 3 ==========-->
+
+    <section class="tog" id="prod2">
+        <div class="my-5">
+            <div class="number1 pt-4">
+                <p class="pixy d-flex justify-content-center fw-bold fs-1 w-100">
+                    PRODUITS LES PLUS ACHÉTÉS
+                </p>
+                <p class="pixy1 d-flex justify-content-center w-100 fst-italic text-center fs-5 fw-bold opacity-75">
+                    Novelty Shop vous Propose les produits les plus Achétés.
+                </p>
+            </div>
+            <div class="container text-center my-3 py-5"  data-aos="zoom-in" data-aos-duration="3000">
+                <div class="row w-100 justify-content-center">
+                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                                    <div class="col-11 moto">
+                                        <div class="imo mb-4">
+                                            <a href=""><img src="./deco/images/cost6.jpg" class="img-fluid" alt="une image"></a>
+                                        </div>
+
+                                        <div class="lompi m-auto">
+                                            <h5 class="text-center">Chemise Imprimé à Manches Longues Pour Homme</h4>
+                                        </div>
+                                        <div class="price m-auto">
+                                            <p class="fs-4 fw-bold texte-center"> 29.200 Franc CFA</p>
+                                        </div>
+                                        <div class="etoile">
+                                            <ul class="d-flex">
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex justify-content-center w-100 mt-3">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">AJOUTER AU PANIER</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                                    <div class="col-11 moto">
+                                        <div class="imo mb-4">
+                                            <img src="./deco/images/cost8.jpg" class="img-fluid" alt="une image">
+                                        </div>
+                                        <div class="lompi m-auto">
+                                            <h5 class="text-center">T-Shirt - Kawasaki - World-SBK Pour Homme</h5>
+                                        </div>
+                                        <div class="price m-auto">
+                                            <p class="fs-4 fw-bold texte-center"> 23.800 Franc CFA</p>
+                                        </div>
+                                        <div class="etoile">
+                                            <ul class="d-flex">
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex justify-content-center w-100 mt-3">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">AJOUTER AU PANIER</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                                    <div class="col-11 moto">
+                                        <div class="imo mb-4">
+                                            <a href=""><img src="./deco/images/cost9.jpg" class="img-fluid" alt="une image"></a>
+                                        </div>
+                
+                                        <div class="lompi m-auto">
+                                            <h5 class="text-center">Manteau Pour Homme - Veste Slim, Blouson Gris Foncé</h4>
+                                        </div>
+                                        <div class="price m-auto">
+                                            <p class="fs-4 fw-bold texte-center"> 35.000 Franc CFA</p>
+                                        </div>
+                                        <div class="etoile">
+                                            <ul class="d-flex">
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil2"><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex justify-content-center w-100 mt-3">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">AJOUTER AU PANIER</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                                    <div class="col-11 moto">
+                                        <div class="imo mb-4">
+                                            <a href=""><img src="./deco/images/cost4.jpg" class="img-fluid" alt="une image"></a>
+                                        </div>
+                
+                                        
+                                        <div class="lompi m-auto">
+                                            <h5 class="text-center">Chemise Homme Col mao Marque Luxe Broderie</h4>
+                                        </div>
+                                        <div class="price m-auto">
+                                            <p class="fs-4 fw-bold texte-center"> 31.000 Franc CFA</p>
+                                        </div>
+                                        <div class="etoile">
+                                            <ul class="d-flex">
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex justify-content-center w-100 mt-3">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">AJOUTER AU PANIER</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+                                    <div class="col-11 moto">
+                                        <div class="imo mb-4">
+                                            <a href=""><img src="./deco/images/cost7.jpg" class="img-fluid" alt="une image"></a>
+                                        </div>
+
+                                        <div class="lompi m-auto">
+                                            <h5 class="text-center">Veste Polaire Tricot pour Homme Cybernecard</h4>
+                                        </div>
+                                        <div class="price m-auto">
+                                            <p class="fs-4 fw-bold texte-center"> 46.900 Franc CFA</p>
+                                        </div>
+                                        <div class="etoile">
+                                            <ul class="d-flex">
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                                <li class="toil1"><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex justify-content-center w-100 mt-3">
+                                            <div class="btny mb-4">
+                                                <button type="submit" class="btny2 fs-6 fw-bold">
+                                                    <a href="#services" class="text-white text-decoration-none">AJOUTER AU PANIER</a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon lovi" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon lovi" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+    
+                        <div class="carousel-indicators  redys">
+                            <div  data-bs-target="#recipeCarousel" data-bs-slide-to="0" class=" active" aria-current="true" aria-label="Slide 1"> <div class="rob"></div> </div>
+                            <div  data-bs-target="#recipeCarousel" data-bs-slide-to="1" class="" aria-label="Slide 2"> <span><div class="rob"></div></span> </div>
+                            <div  data-bs-target="#recipeCarousel" data-bs-slide-to="2" class="" aria-label="Slide 3"> <div class="rob"></div> </div>
+                            <div  data-bs-target="#recipeCarousel" data-bs-slide-to="3" class="" aria-label="Slide 4"> <div class="rob"></div> </div>
+                            <div  data-bs-target="#recipeCarousel" data-bs-slide-to="4" class="" aria-label="Slide 5"> <div class="rob"></div> </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="btny w-100 d-flex justify-content-center my-3 py-5">
+                <button type="submit" class="btny6 fs-6 fw-bold">
+                    <a href="./liste-produits/liste-produits.html" class="text-white text-decoration-none">VOIR PLUS</a>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--==========section numero 4 ==========-->
+
+    <section class="togb" id="prod3">
+        <div class="my-5">
+            <div class="number1 pt-4">
+                <p class="pixy d-flex justify-content-center fw-bold fs-1 w-100">
+                    TÉMOIGNAGES DES CLIENTS
+                </p>
+                <p class="pixy1 d-flex justify-content-center w-100 fst-italic text-center fs-5 fw-bold opacity-75">
+                    Les Commentaires des Clients sur nos Produits.
+                </p>
+            </div>
+            <div class="container text-center my-3 py-5" data-aos="zoom-in-right" data-aos-duration="2000">
+                <div class="row w-100 justify-content-center">
+                    <div id="recipeCarousel3" class="carousel slide carouse" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+                                    <div class="col-11 misty">
+                                        <p class="text-start ps-1">
+                                            Je suis un admirateur de Novelty Shop et de ses produits car ils sont meilleur 
+                                            et à chaque fois que je passe une commende elle arrive toujours à temps !
+                                            je vous recommende vivement.
+                                        </p>
+                                        <div class="d-flex mt-4">
+                                            <div class="morzy">
+                                                <img src="./deco/images/barryzo.png" class="img-fluid h-100" alt="un profil">
+                                            </div>
+
+                                            <div class="nomm ms-4 mt-3">
+                                                <p class="ps fw-bold fs-6">
+                                                    Barry Mamadou
+                                                </p>
+                                                <p class="opacity-50 fw-bold fs-5">
+                                                    Bakeliste Dakar
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+                                    <div class="col-11 misty">
+                                        <p class="text-start ps-1">
+                                            J'apprecie énormement cette plateforme J'avoue que vos produits sont quasiement uniques 
+                                            les pris sont tout à fait Logiques ! Et ce qui vous rend special c'est
+                                            la réduction des frais de livraison. 
+                                        </p>
+                                        <div class="d-flex mt-4">
+                                            <div class="morzy">
+                                                <img src="./deco/images/user1.jpg" class="img-fluid" alt="un profil">
+                                            </div>
+
+                                            <div class="nomm ms-4 mt-3">
+                                                <p class="ps fw-bold fs-6">
+                                                    ANGELINA WEST ALLEN
+                                                </p>
+                                                <p class="opacity-50 fw-bold fs-5">
+                                                    Etudiante Small Ville 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+                                    <div class="col-11 misty">
+                                        <p class="text-start ps-1">
+                                            Je suis un admirateur de Novelty Shop et de ses produits car ils sont meilleur 
+                                            et à chaque fois que je passe une commende elle arrive toujours à temps !
+                                            je vous recommende vivement.
+                                        </p>
+                                        <div class="d-flex mt-4">
+                                            <div class="morzy">
+                                                <img src="./deco/images/barryzo.png" class="img-fluid h-100" alt="un profil">
+                                            </div>
+
+                                            <div class="nomm ms-4 mt-3">
+                                                <p class="ps fw-bold fs-6">
+                                                    Barry Mamadou
+                                                </p>
+                                                <p class="opacity-50 fw-bold fs-5">
+                                                    Bakeliste Dakar
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+                                    <div class="col-11 misty">
+                                        <p class="text-start ps-1">
+                                            J'apprecie énormement cette plateforme J'avoue que vos produits sont quasiement uniques 
+                                            les pris sont tout à fait Logiques ! Et ce qui vous rend special c'est
+                                            la réduction des frais de livraison. 
+                                        </p>
+                                        <div class="d-flex mt-4">
+                                            <div class="morzy">
+                                                <img src="./deco/images/user1.jpg" class="img-fluid" alt="un profil">
+                                            </div>
+
+                                            <div class="nomm ms-4 mt-3">
+                                                <p class="ps fw-bold fs-6">
+                                                    ANGELINA WEST ALLEN
+                                                </p>
+                                                <p class="opacity-50 fw-bold fs-5">
+                                                    Etudiante Small Ville 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+                                    <div class="col-11 misty">
+                                        <p class="text-start ps-1">
+                                            Je suis un admirateur de Novelty Shop et de ses produits car ils sont meilleur 
+                                            et à chaque fois que je passe une commende elle arrive toujours à temps !
+                                            je vous recommende vivement.
+                                        </p>
+                                        <div class="d-flex mt-4">
+                                            <div class="morzy">
+                                                <img src="./deco/images/barryzo.png" class="img-fluid h-100" alt="un profil">
+                                            </div>
+
+                                            <div class="nomm ms-4 mt-3">
+                                                <p class="ps fw-bold fs-6">
+                                                    Barry Mamadou
+                                                </p>
+                                                <p class="opacity-50 fw-bold fs-5">
+                                                    Bakeliste Dakar
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item ">
+                                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center">
+                                    <div class="col-11 misty">
+                                        <p class="text-start ps-1">
+                                            J'apprecie énormement cette plateforme J'avoue que vos produits sont quasiement uniques 
+                                            les pris sont tout à fait Logiques ! Et ce qui vous rend special c'est
+                                            la réduction des frais de livraison. 
+                                        </p>
+                                        <div class="d-flex mt-4">
+                                            <div class="morzy">
+                                                <img src="./deco/images/user1.jpg" class="img-fluid" alt="un profil">
+                                            </div>
+
+                                            <div class="nomm ms-4 mt-3">
+                                                <p class="ps fw-bold fs-6">
+                                                    ANGELINA WEST ALLEN
+                                                </p>
+                                                <p class="opacity-50 fw-bold fs-5">
+                                                    Etudiante Small Ville 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                              
+                        </div>
+    
+                        <div class="carousel-indicators  redys">
+                            <div  data-bs-target="#recipeCarousel3" data-bs-slide-to="0" class=" active" aria-current="true" aria-label="Slide 1"> <div class="robn"></div> </div>
+                            <div  data-bs-target="#recipeCarousel3" data-bs-slide-to="1" class="" aria-label="Slide 2"> <span><div class="robn"></div></span> </div>
+                            <div  data-bs-target="#recipeCarousel3" data-bs-slide-to="2" class="" aria-label="Slide 3"> <div class="robn"></div> </div>
+                            <div  data-bs-target="#recipeCarousel3" data-bs-slide-to="3" class="" aria-label="Slide 4"> <div class="robn"></div> </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========section numero 4 ==========-->
+    
+    <section>
+        <footer>
+            <div class="container-fluid footy px-5">
+                <div class="row rowi pb-3">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="col-11">
+                            <div class="logy mt-4">
+                                <img src="./deco/images/logo3.png" class="img-fluid" alt="logo">
+                            </div>
+                            <div class="icony my-4">
+                                <p class="fs-6 pdy fw-bold">CONTACTEZ-NOUS</p>
+                                <div class="d-flex kilo">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p class="text-white fw-bold pt-1"> 77 012 78 85</p>
+                                </div>
+                                <div class="d-flex kilo">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p class="text-white fw-bold pt-1"> Hlm1 Villa 145</p>
+                                </div>
+                                <div class="d-flex kilo">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="text-white fw-bold pt-1"> bm@gmail.com</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="conto">
+                                <p class="fs-6 pdy fw-bold">SUIVEZ-NOUS</p>
+
+                                <ul class="list-unstyled w-75 d-flex justify-content-around">
+
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </li>
+                                    </a>
+
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </li>
+                                    </a>
+
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </li>
+                                    </a>
+
+                                    <a href="#" class="text-decoration-none">
+                                        <li class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="vol-11">
+                            <p class="fs-6 pdy fw-bold">A PROPOS DE NOUS</p>
+                            <a href="#" class="text-decoration-none">
+                                <p class="text-white fw-bold pt-1">A Prpos De Nous</p>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <p class="text-white fw-bold pt-1">Termes Et Conditions</p>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <p class="text-white fw-bold pt-1">Evennements</p>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <p class="text-white fw-bold pt-1">Témoignages</p>
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <p class="text-white fw-bold pt-1">Avis D'expert</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="col-10">
+                            <p class="fs-6 pdy fw-bold ">PAEMENTS DISPONOBLES</p>
+                            <div class="d-flex justify-content-between pt-3">
+                                <div class="moddi">
+                                    <a href="#" class="text-decoration-none">
+                                        <img src="./deco/images/orange .jpg" class="img-fluid" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="moddi">
+                                    <a href="#" class="text-decoration-none">
+                                        <img src="./deco/images/wave.jpg" class="img-fluid" alt="logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-4">
+                                <div class="moddi">
+                                    <a href="#" class="text-decoration-none">
+                                        <img src="./deco/images/paypal.jpg" class="img-fluid" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="moddi">
+                                    <a href="#" class="text-decoration-none">
+                                        <img src="./deco/images/free.jpg" class="img-fluid" alt="logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 mt-5">
+                        <div class="col-12">
+                            <p class="fs-6 pdy fw-bold">ABONNEMENT</p>
+                            <a href="#" class="text-decoration-none">
+                                <p class="text-white fw-bold pt-1">Abonnement Pour Plus D'info</p>
+                            </a>
+                            <div class="inpou pt-3">
+                                <input type="email" placeholder="Votre Mail" class="ps-3">
+                            </div>
+                            <div class="btny mt-4">
+                                <button type="submit" class="btny7 fw-bold text-white">
+                                    S'ABONNER
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cright d-flex justify-content-center align-items-center pt-4">
+                    <p class="text-white ">Copyright © 2023 Realised By Barry Mamadou</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!--========== FIN CODE ==========-->
+
+
+    <!--===========================================SCRIPTES============================================================================-->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
+
+      <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+      </script>
+      <script src="./deco/css/javas-mini-projet-2.js"></script>
+      <!-- ++++++++++ AOS ANIMATION +++++++++ -->
+        <script>
+            AOS.init();
+        </script>
+      <!-- ++++++++++ AOS ANIMATION +++++++++ -->
+  </body>
+</html>
