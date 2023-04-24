@@ -18,6 +18,7 @@ body{
   border-radius: 25px;
 }
 .dropdown{
+  margin-top: 30px;
   background-color:rgb(14, 21, 37);
   height: 40px;
   border-radius: 25px;
