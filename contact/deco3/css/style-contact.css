@@ -88,11 +88,10 @@ body{
 }
 .imto{
   height: 430px;
-  border: 3px solid  rgb(113, 20, 125);
+  border: 3px solid  rgba(113, 20, 125, 0.366);
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
   width: 100%;
-  box-shadow:10px 10px 80px 10px rgb(113, 20, 125);
 }
 .imto img{
   border-top-right-radius: 10%;
@@ -102,8 +101,7 @@ body{
 }
 .formulo{
   width: 95%;
-  border: 3px solid  rgb(240, 27, 45);
-  box-shadow:10px 10px 80px 10px  rgb(135, 27, 136);
+  border: 3px solid  rgba(240, 27, 45, 0.363);
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
   background-color: rgba(206, 109, 109, 0.708);
@@ -176,8 +174,7 @@ body{
 .sawy{
   display: flex;
   width: 80%;
-  border: 3px solid  rgb(113, 20, 125);
-  box-shadow:10px 10px 80px 10px rgb(113, 20, 125);
+  border: 3px solid  rgba(113, 20, 125, 0.38);
   border-top-right-radius: 10%;
   border-bottom-left-radius: 10%;
 }

@@ -106,7 +106,6 @@ body{
   background-color: rgb(255, 255, 255);
   width: 45%;
   border: 1px solid rgb(145, 5, 200);
-  box-shadow:10px 10px 100px 30px rgb(196, 63, 233);
   border-top-left-radius: 10%;
   border-bottom-right-radius: 10%;
 }
@@ -127,7 +126,7 @@ body{
 }
 .inputo{
   padding-left: 15px;
-  width: 43%;
+  width: 89%;
   height: 45px;
   border-radius: 15px;
   background-color: rgba(213, 207, 207, 0.991);
@@ -170,7 +169,7 @@ body{
   text-decoration: underline;
 }
 .posty{
-  font-size: 25px;
+  font-size: 19px;
   font-weight: 300;
 }
 .posty1{
